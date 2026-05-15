@@ -25,13 +25,16 @@ const seedData = async () => {
       await admin.save();
     }
 
+    // Force refresh example recipes to fix image URLs
+    await Recipe.deleteMany({ author: admin._id });
+
     const examples = [
       {
         title: 'Classic Margherita Pizza',
         description: 'A timeless Italian favorite with fresh basil, mozzarella, and juicy tomatoes on a crispy crust.',
         ingredients: ['Pizza dough', 'Tomato sauce', 'Fresh mozzarella', 'Fresh basil', 'Olive oil'],
         steps: ['Preheat oven to 450°F', 'Roll out dough', 'Spread sauce and cheese', 'Bake for 12-15 mins', 'Add fresh basil'],
-        imageUrl: 'https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imageUrl: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=1000',
         author: admin._id
       },
       {
@@ -39,7 +42,7 @@ const seedData = async () => {
         description: 'A fragrant and creamy curry packed with fresh vegetables and authentic Thai spices.',
         ingredients: ['Coconut milk', 'Green curry paste', 'Chicken or Tofu', 'Bamboo shoots', 'Eggplant', 'Fish sauce'],
         steps: ['Sauté curry paste', 'Add coconut milk', 'Simmer with veggies/protein', 'Season with fish sauce', 'Serve with jasmine rice'],
-        imageUrl: 'https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imageUrl: 'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=1000',
         author: admin._id
       },
       {
@@ -47,13 +50,13 @@ const seedData = async () => {
         description: 'A refreshing and nutrient-packed breakfast bowl topped with crunchy granola and fresh berries.',
         ingredients: ['Frozen berries', 'Banana', 'Greek yogurt', 'Almond milk', 'Granola', 'Chia seeds'],
         steps: ['Blend fruits and yogurt', 'Pour into a bowl', 'Top with granola and seeds', 'Add fresh berry slices', 'Enjoy chilled'],
-        imageUrl: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imageUrl: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?q=80&w=1000',
         author: admin._id
       }
     ];
 
     await Recipe.insertMany(examples);
-    console.log('✅ Successfully seeded 3 example recipes!');
+    console.log('✅ Example recipes refreshed with new images!');
   } catch (err) {
     console.error('❌ Seeding error:', err);
   }
