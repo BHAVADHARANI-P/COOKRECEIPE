@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "dev": "nodemon index.js",
     "server": "node server.js",
-    "frontend": "vite"
+    "frontend": "vite",
+    "build": "vite build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
