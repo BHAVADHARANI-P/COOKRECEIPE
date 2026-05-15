@@ -27,27 +27,27 @@ const seedData = async () => {
 
     const examples = [
       {
-        title: "Classic Margherita Pizza",
-        description: "A timeless Italian favorite with fresh basil, mozzarella, and juicy tomatoes on a crispy crust.",
-        ingredients: ["Pizza dough", "Tomato sauce", "Fresh mozzarella", "Fresh basil leaves", "Extra virgin olive oil"],
-        steps: ["Preheat oven to 450°F", "Roll out dough", "Spread sauce and add mozzarella", "Bake for 12-15 mins", "Garnish with basil and oil"],
-        imageUrl: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80",
+        title: 'Classic Margherita Pizza',
+        description: 'A timeless Italian favorite with fresh basil, mozzarella, and juicy tomatoes on a crispy crust.',
+        ingredients: ['Pizza dough', 'Tomato sauce', 'Fresh mozzarella', 'Fresh basil', 'Olive oil'],
+        steps: ['Preheat oven to 450°F', 'Roll out dough', 'Spread sauce and cheese', 'Bake for 12-15 mins', 'Add fresh basil'],
+        imageUrl: 'https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         author: admin._id
       },
       {
-        title: "Spicy Thai Green Curry",
-        description: "A fragrant and creamy curry packed with fresh vegetables and authentic Thai spices.",
-        ingredients: ["Coconut milk", "Green curry paste", "Bamboo shoots", "Thai basil", "Kaffir lime leaves", "Tofu or Chicken"],
-        steps: ["Heat coconut milk", "Stir in curry paste", "Add protein and vegetables", "Simmer until cooked", "Finish with lime leaves and basil"],
-        imageUrl: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=800&q=80",
+        title: 'Spicy Thai Green Curry',
+        description: 'A fragrant and creamy curry packed with fresh vegetables and authentic Thai spices.',
+        ingredients: ['Coconut milk', 'Green curry paste', 'Chicken or Tofu', 'Bamboo shoots', 'Eggplant', 'Fish sauce'],
+        steps: ['Sauté curry paste', 'Add coconut milk', 'Simmer with veggies/protein', 'Season with fish sauce', 'Serve with jasmine rice'],
+        imageUrl: 'https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         author: admin._id
       },
       {
-        title: "Berry Bliss Smoothie Bowl",
-        description: "A refreshing and nutrient-packed breakfast bowl topped with crunchy granola and fresh fruits.",
-        ingredients: ["Frozen berries", "Banana", "Greek yogurt", "Honey", "Granola", "Chia seeds"],
-        steps: ["Blend fruit and yogurt", "Pour into a bowl", "Top with granola and seeds", "Drizzle with honey", "Enjoy immediately"],
-        imageUrl: "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80",
+        title: 'Berry Bliss Smoothie Bowl',
+        description: 'A refreshing and nutrient-packed breakfast bowl topped with crunchy granola and fresh berries.',
+        ingredients: ['Frozen berries', 'Banana', 'Greek yogurt', 'Almond milk', 'Granola', 'Chia seeds'],
+        steps: ['Blend fruits and yogurt', 'Pour into a bowl', 'Top with granola and seeds', 'Add fresh berry slices', 'Enjoy chilled'],
+        imageUrl: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         author: admin._id
       }
     ];
