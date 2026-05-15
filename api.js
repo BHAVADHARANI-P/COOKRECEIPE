@@ -1,11 +1,8 @@
 import axios from 'axios'
 
 const api = axios.create({
-  // Point to the live Render backend if in production, otherwise use relative path
-  // This ensures Vercel deployment can communicate with the Render backend
-  baseURL: import.meta.env.PROD
-    ? 'https://cookreceipe-4.onrender.com/api' 
-    : '/api',
+  // Hardcoding the Render backend to ensure Vercel can always find it
+  baseURL: 'https://cookreceipe-4.onrender.com/api',
   withCredentials: true,
 })
 
