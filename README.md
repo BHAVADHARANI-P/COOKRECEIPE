@@ -4,7 +4,7 @@ Welcome to **RecipeMagic**, a high-end full-stack culinary platform where food l
 
 ## 🚀 Live Demo
 **Website**: [https://cookreceipe-4.onrender.com]
-WEBSITE :(https://cookreceipe-4.onrender.com)
+WEBSITE :(https://cookreceipe-9po2.vercel.app)
 
 ---
 
