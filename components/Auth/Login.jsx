@@ -14,13 +14,11 @@ import {
   InputAdornment,
   IconButton
 } from '@mui/material';
-import {
-  Email,
-  Lock,
-  Visibility,
-  VisibilityOff,
-  Google
-} from '@mui/icons-material';
+import Email from '@mui/icons-material/Email';
+import Lock from '@mui/icons-material/Lock';
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import Google from '@mui/icons-material/Google';
 import { motion } from 'framer-motion';
 import { useAuth } from '../../context/AuthContext';
 
